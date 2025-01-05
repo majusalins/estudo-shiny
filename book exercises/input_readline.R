@@ -27,3 +27,57 @@ if (num %% 2 == 0) {
 } else{
   print("O número é ímpar.")
 }
+
+
+# loops: somando todos os números divisíveis por 3 no intervalo de 1 a 1000
+
+sum <- 0
+x <- 0
+
+for (x in 1:1000) {
+  if (x %% 3 == 0) {
+    sum = sum + x
+  }
+}
+
+print(sum)
+
+
+# printando apenas os números pares no intervalo de 1 a 300
+
+for (x in 1:300) {
+  if (x %% 2 == 0) {
+    print(x)
+  }
+}
+
+
+# função que recebe um número X e retorna X asteriscos
+
+x <- as.integer(readline(prompt = "Insira um número: "))
+estrelas <- function(x) {
+  for (i in 1:x) {
+    print("*")
+  }
+}
+
+estrelas(x)
+
+# estrutura de dados: vetor
+
+vetor <- c(1, 2, 3, 4, 5, 6, 7)
+length(vetor)
+class(vetor)
+
+dias <- c("segunda",
+          "terça",
+          "quarta",
+          "quinta",
+          "sexta",
+          "sábado",
+          "domingo")
+class(dias)
+
+juntando <- c(vetor, dias)
+print(juntando)
+class(juntando)
