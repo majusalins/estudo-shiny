@@ -4,17 +4,17 @@
 # a função byrow define se a matriz será preenchida por linha
 # ou por coluna
 
-matriz <- matrix(c(1, 2, 3, 4, 5, 6),
-                 nrow = 3,
-                 ncol = 2,
-                 byrow = TRUE)
-matriz
+matrizA <- matrix(c(1, 2, 3, 4, 5, 6),
+                  nrow = 3,
+                  ncol = 2,
+                  byrow = TRUE)
+matrizA
 
-matriz <- matrix(c(1, 2, 3, 4, 5, 6),
-                 nrow = 3,
-                 ncol = 2,
-                 byrow = FALSE)
-matriz
+matrizB <- matrix(c(1, 2, 3, 4, 5, 6),
+                  nrow = 3,
+                  ncol = 2,
+                  byrow = FALSE)
+matrizB
 
 # buscar elemento por posição
 
@@ -69,4 +69,3 @@ soma_colunas
 
 soma_linhas <- rowSums(matrizB)
 soma_linhas
-
