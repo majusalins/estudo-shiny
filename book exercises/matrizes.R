@@ -43,3 +43,30 @@ matrizAB
 produto <- 2 * matrizAB
 produto
 
+matrizC <- matrix(c(3, 5, 1, 2, 6, 4),
+                  nrow = 2,
+                  ncol = 3,
+                  byrow = TRUE)
+matrizC
+
+soma <- matrizA + matrizC
+soma
+
+sub <- matrizA - matrizC
+sub
+
+produto_matriz <- matrizA %*% matrizC
+produto_matriz
+
+media_colunas <- colMeans(matrizA)
+media_colunas
+
+media_linhas <- rowMeans(matrizA)
+media_linhas
+
+soma_colunas <- colSums(matrizB)
+soma_colunas
+
+soma_linhas <- rowSums(matrizB)
+soma_linhas
+
